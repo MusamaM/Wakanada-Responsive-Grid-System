@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>WAKANDA RESPONSIVE GRID SYSTEM</title>
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="wakgridsystem.css">
+	<link rel="stylesheet" href="css/github-style.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Javascript -->
+	<script src="js/prettify.js"></script>
+</head>
+
+<body onload="prettyPrint()">
+	<section class="intro">
+		<div class="wak-container">
+			<div class="wak-box-12">
+				<div class="heading wak-box-12">
+					<h1>Wakanda Grid System</h1>
+					<span>The fastest way to creat responsive multi-device layouts</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="fx-c-section">
+		<div class="wak-container">
+			<div class="wak-box-12">
+				<p>First add an <code>div</code> with a class <code>wak-container</code>. This way you will create a vertical column container that will hold all the boxes inside. Then add some divs inside with the class <code>wak-box-xx</code>.</p>
+				<pre class="prettyprint lang-html">
+				&lt;div class=&quot;wak-container&quot;&gt;
+					 &lt;div class=&quot;wak-box-6&quot;&gt;&lt;/div&gt; 
+					 &lt;div class=&quot;wak-box-6&quot;&gt;&lt;/div&gt; 
+			 	&lt;/div&gt;
+				</pre>
+			</div>
+			<div class="line">
+				<div class="wak-box-1"><div class="box">wak-box-1</div></div>
+				<div class="wak-box-1"><div class="box">wak-box-1</div></div>
+				<div class="wak-box-1"><div class="box">wak-box-1</div></div>
+				<div class="wak-box-1"><div class="box">wak-box-1</div></div>
+				<div class="wak-box-1"><div class="box">wak-box-1</div></div>
+				<div class="wak-box-1"><div class="box">wak-box-1</div></div>
+				<div class="wak-box-1"><div class="box">wak-box-1</div></div>
+				<div class="wak-box-1"><div class="box">wak-box-1</div></div>
+				<div class="wak-box-1"><div class="box">wak-box-1</div></div>
+				<div class="wak-box-1"><div class="box">wak-box-1</div></div>
+				<div class="wak-box-1"><div class="box">wak-box-1</div></div>
+				<div class="wak-box-1"><div class="box">wak-box-1</div></div>
+			</div>
+			<!-- GRID LINE TOTAL 12 -->
+			<div class="line">
+				<div class="wak-box-2"><div class="box">wak-box-2</div></div>
+				<div class="wak-box-2"><div class="box">wak-box-2</div></div>
+				<div class="wak-box-2"><div class="box">wak-box-2</div></div>
+				<div class="wak-box-2"><div class="box">wak-box-2</div></div>
+				<div class="wak-box-2"><div class="box">wak-box-2</div></div>
+				<div class="wak-box-2"><div class="box">wak-box-2</div></div>
+			</div>
+			<!-- GRID LINE TOTAL 12 -->
+			<div class="line">
+				<div class="wak-box-6"><div class="box">wak-box-6</div></div>
+				<div class="wak-box-6"><div class="box">wak-box-6</div></div>
+			</div>
+			<!-- GRID LINE TOTAL 12 -->
+			<div class="line">
+				<div class="wak-box-4"><div class="box">wak-box-4</div></div>
+				<div class="wak-box-8"><div class="box">wak-box-8</div></div>
+			</div>
+			<!-- GRID LINE TOTAL 12 -->
+			<div class="line">
+				<div class="wak-box-12"><div class="box">wak-box-12</div></div>
+			</div>
+			
+			<div class="separator wak-box-12"></div>
+			<!-- *************** OFFSETS ************** -->
+			<div class="wak-box-12">
+				<h2>Offset Boxes</h2>
+				<p>You can move blocks up to 11 boxes to the right by using the class <code>wak-box-offset-xx</code> </p>
+				<pre class="prettyprint lang-html">
+				&lt;div class=&quot;wak-container&quot;&gt;
+					&lt;div class=&quot;wak-box-3&quot;&gt;&lt;/div&gt; 
+					&lt;div class=&quot;wak-box-6 wak-box-offset-3&quot;&gt;&lt;/div&gt; 
+			 	&lt;/div&gt;
+				</pre>
+			</div>
+			<!-- GRID LINE TOTAL 12 -->
+			<div class="line">
+				<div class="wak-box-3"><div class="box">wak-box-3</div></div>
+				<div class="wak-box-6 wak-box-offset-3"><div class="box">wak-box-6 wak-box-offset-3</div></div>
+			</div>
+			<!-- GRID LINE TOTAL 12 -->
+			<div class="line">
+				<div class="wak-box-6 wak-box-offset-6"><div class="box">wak-box-6 wak-box-offset-6</div></div>
+			</div>
+			<!-- GRID LINE TOTAL 12 -->
+			<div class="line">
+				<div class="wak-box-11 wak-box-offset-1"><div class="box">wak-box-11 wak-box-offset-1</div></div>
+			</div>
+			
+			<div class="separator wak-box-12"></div>
+			<!-- *************** FLUID CONTAINER ************** -->
+			<div class="wak-box-12">
+				<h2>Fluid Container</h2>
+				<p>You can also use the fluid container by using the class <code>wak-container-fluid</code></p>
+				<pre class="prettyprint lang-html">
+				&lt;div class=&quot;wak-container-fluid&quot;&gt;
+					 &lt;div class=&quot;wak-box-6&quot;&gt;&lt;/div&gt; 
+					 &lt;div class=&quot;wak-box-6&quot;&gt;&lt;/div&gt; 
+			 	&lt;/div&gt;
+				</pre>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="wak-container">
+			<div class="wak-box-12">
+				<p>&copy; <a href="https://wakanda.org/">Wakanda</a> 2014</p>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
